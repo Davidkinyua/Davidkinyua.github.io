@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <div class="nav-wrapper">
+            <div class="left-side">  
+                <div class="nav-link-wrapper active-nav-link"> 
+                            <a href="index.html">HOME</a>
+                        </div>
+                <div class ="nav-link-wrapper">        
+                            <a href="about.html">About</a>
+                </div>
+            </div> 
+            <div class ="right-side">  
+                <div class="brand">  
+                     <div> DAVID KINYUA </div>
+                </div>
+            </div> 
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"style ="background-image: url(images/portfolio1.jpg.jpg)">
+                    </div>
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="logos/aleks-dorohovich-nJdwUHmaY8A-unsplash.jpg"height="350px" width="100%">
+                            </div>
+                            <div class="subtitle">
+                               Phone technology.
+                            </div>
+                        </div>
+                    </div>
+<div class="portfolio-item-wrapper">
+        <div class="portfolio-img-background"style ="background-image: url(images/portfolio10.jpg.jpg)">
+        </div>
+            <div class="image-text-wrapper">
+                <div class="logo-wrapper">
+                    <img src="logos/david-clode-SbCmf5LzvLw-unsplash.jpg" height="350px" width="100%">
+                </div>
+                <div class="subtitle">
+                    Screen saver.
+                </div>
+            </div>
+</div>
+            <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"style ="background-image: url(images/ibu-photographer-nQFOr2WJDXY-unsplash.jpg)">
+                    </div>
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="logos/devin-avery-UHE0M5E7PjU-unsplash.jpg" height="350px" width="100%" >
+                            </div>
+                            <div class="subtitle">
+                                Weather information.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                                <div class="portfolio-img-background"style ="background-image: url(images/imgix-klWUhr-wPJ8-unsplash.jpg)">
+                                </div>
+                                    <div class="image-text-wrapper">
+                                        <div class="logo-wrapper">
+                                            <img src="logos/robert-anasch-7r59pbkQY6U-unsplash.jpg" height="350px" width="100%">
+                                        </div>
+                                        <div class="subtitle">
+                                            Servers Location.
+                                        </div>
+                                    </div>
+                                    </div>
+                        <div class="portfolio-item-wrapper">
+                                <div class="portfolio-img-background " style ="background-image: url(images/portfolio9.jpg.jpg)">
+                                </div>
+                                    <div class="image-text-wrapper">
+                                        <div class="logo-wrapper">
+                                            <img src="logos/rohan-oraqZwfiQgE-unsplash.jpg" height="350px" width="100%">
+                                        </div>
+                                        <div class="subtitle">
+                                            House simulations.
+                                        </div>
+                                    </div>
+                                                  
+                            </div>
+                            <div class="portfolio-item-wrapper">
+                                    <div class="portfolio-img-background " style ="background-image: url(images/radek-grzybowski-eBRTYyjwpRY-unsplash.jpg">
+                                    </div>
+                                        <div class="image-text-wrapper">
+                                            <div class="logo-wrapper">
+                                                <img src="logos/stoica-ionela-CoNsEK5iHug-unsplash.jpg"height="350px" width="100%">
+                                            </div>
+                                            <div class="subtitle">
+                                                Everywhere you go i am there.
+                                            </div>
+                                        </div>
+                                                      
+                                </div>
+                                           
+
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',() => {
+            portfolioItem.childNodes[1].classlist.add('img.darken');
+        portfolioItem.addEventListener('mouseout'),() =>{
+            portfolioItem.childNodes[1].classlist.remove('img-darken');
+        }        });
+    });
+</script>
+</html>
